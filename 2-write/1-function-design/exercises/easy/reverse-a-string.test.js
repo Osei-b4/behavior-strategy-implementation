@@ -22,7 +22,12 @@ for (const solution of [secretSolution]) {
     it('a string with all capital letters', () => {
       expect(solution('ASDF')).toEqual('FDSA');
     });
-    // write at least 5 more tests ...
+    it('a string with number', () => {
+      expect(solution('12345').toEqual('54321'));
+    });
+    it('a string with whitespace', () => {
+      expect(solution('  Hello, World!  ')).toEqual('  !dlroW, olleH  ');
+    });
   });
 }
 
